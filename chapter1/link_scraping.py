@@ -6,19 +6,26 @@ import urlparse
 import robotparser
 
 
-def download(url, user_agent = 'wswp', num_retries = 2):
+def download(url, user_agent = 'wswp', num_retries = 2,proxy = None):
     
     print 'Downloading', url
     headers = {'User-agent':user_agent}
     request = urllib2.Request(url, headers =headers)
+    
+    opener = urllib2.build_opener()
+    if proxy:
+        proxy_params = {urlparse.urlparse(url).scheme:proxy}
+        opener.add_handler(urllib2.ProxyHandler(proxy_params))
     try:
-        html =  urllib2.urlopen(request).read()
+#        html =  urllib2.urlopen(request).read()
+        
+        html = opener.open(request).read()
     except urllib2.URLError as e:
         print 'Download error:', e.reason
         html = None
         if num_retries > 0:
             if hasattr(e, 'code') and 500 <= e.code <600:
-                return download(url, num_retries -1)
+                return download(url, user_agent, proxy, num_retries -1)
     return html
 
 def analysis_robots():
