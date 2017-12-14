@@ -80,7 +80,10 @@ def get_links(html):
     
     return webpage_regex.findall(html)    
 
-def link_crawler(seed_url, link_regex):
+def link_crawler(seed_url, link_regex, max_depth = 2):
+    
+    max_depth = 2
+    
    
     crawl_queue = [seed_url]
     # keep track which URL's have seen before
