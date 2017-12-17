@@ -1,0 +1,326 @@
+deque(['http://example.webscraping.com/'])
+http://example.webscraping.com/
+Downloading: http://example.webscraping.com/
+0
+depth
+link_regex
+['/places/default/index', '/places/default/index', '/places/default/view/Afghanistan-1', '/places/default/view/Aland-Islands-2', '/places/default/view/Albania-3', '/places/default/view/Algeria-4', '/places/default/view/American-Samoa-5', '/places/default/view/Andorra-6', '/places/default/view/Angola-7', '/places/default/view/Anguilla-8', '/places/default/view/Antarctica-9', '/places/default/view/Antigua-and-Barbuda-10', '/places/default/index/1']
+links
+seen
+links
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+http://example.webscraping.com/places/default/index/1
+Downloading: http://example.webscraping.com/places/default/index/1
+1
+depth
+link_regex
+['/places/default/index/1', '/places/default/index', '/places/default/view/Argentina-11', '/places/default/view/Armenia-12', '/places/default/view/Aruba-13', '/places/default/view/Australia-14', '/places/default/view/Austria-15', '/places/default/view/Azerbaijan-16', '/places/default/view/Bahamas-17', '/places/default/view/Bahrain-18', '/places/default/view/Bangladesh-19', '/places/default/view/Barbados-20', '/places/default/index/0', '/places/default/index/2']
+links
+links
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+http://example.webscraping.com/places/default/index/2
+Downloading: http://example.webscraping.com/places/default/index/2
+2
+depth
+link_regex
+['/places/default/index/2', '/places/default/index', '/places/default/view/Belarus-21', '/places/default/view/Belgium-22', '/places/default/view/Belize-23', '/places/default/view/Benin-24', '/places/default/view/Bermuda-25', '/places/default/view/Bhutan-26', '/places/default/view/Bolivia-27', '/places/default/view/Bonaire-Saint-Eustatius-and-Saba-28', '/places/default/view/Bosnia-and-Herzegovina-29', '/places/default/view/Botswana-30', '/places/default/index/1', '/places/default/index/3']
+links
+links
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+seen
+links
+links
+seen
+http://example.webscraping.com/places/default/index/3
+Downloading: http://example.webscraping.com/places/default/index/3
+3
+http://example.webscraping.com/places/default/view/Botswana-30
+Downloading: http://example.webscraping.com/places/default/view/Botswana-30
+3
+http://example.webscraping.com/places/default/view/Bosnia-and-Herzegovina-29
+Downloading: http://example.webscraping.com/places/default/view/Bosnia-and-Herzegovina-29
+3
+http://example.webscraping.com/places/default/view/Bonaire-Saint-Eustatius-and-Saba-28
+Downloading: http://example.webscraping.com/places/default/view/Bonaire-Saint-Eustatius-and-Saba-28
+3
+http://example.webscraping.com/places/default/view/Bolivia-27
+Downloading: http://example.webscraping.com/places/default/view/Bolivia-27
+3
+http://example.webscraping.com/places/default/view/Bhutan-26
+Downloading: http://example.webscraping.com/places/default/view/Bhutan-26
+3
+http://example.webscraping.com/places/default/view/Bermuda-25
+Downloading: http://example.webscraping.com/places/default/view/Bermuda-25
+3
+http://example.webscraping.com/places/default/view/Benin-24
+Downloading: http://example.webscraping.com/places/default/view/Benin-24
+3
+http://example.webscraping.com/places/default/view/Belize-23
+Downloading: http://example.webscraping.com/places/default/view/Belize-23
+3
+http://example.webscraping.com/places/default/view/Belgium-22
+Downloading: http://example.webscraping.com/places/default/view/Belgium-22
+3
+http://example.webscraping.com/places/default/view/Belarus-21
+Downloading: http://example.webscraping.com/places/default/view/Belarus-21
+3
+http://example.webscraping.com/places/default/index/0
+Downloading: http://example.webscraping.com/places/default/index/0
+2
+depth
+link_regex
+['/places/default/index/0', '/places/default/index', '/places/default/view/Afghanistan-1', '/places/default/view/Aland-Islands-2', '/places/default/view/Albania-3', '/places/default/view/Algeria-4', '/places/default/view/American-Samoa-5', '/places/default/view/Andorra-6', '/places/default/view/Angola-7', '/places/default/view/Anguilla-8', '/places/default/view/Antarctica-9', '/places/default/view/Antigua-and-Barbuda-10', '/places/default/index/1']
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+http://example.webscraping.com/places/default/view/Barbados-20
+Downloading: http://example.webscraping.com/places/default/view/Barbados-20
+2
+depth
+link_regex
+['/places/default/view/Barbados-20', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Bangladesh-19
+Downloading: http://example.webscraping.com/places/default/view/Bangladesh-19
+2
+depth
+link_regex
+['/places/default/view/Bangladesh-19', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Bahrain-18
+Downloading: http://example.webscraping.com/places/default/view/Bahrain-18
+2
+depth
+link_regex
+['/places/default/view/Bahrain-18', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Bahamas-17
+Downloading: http://example.webscraping.com/places/default/view/Bahamas-17
+2
+depth
+link_regex
+['/places/default/view/Bahamas-17', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Azerbaijan-16
+Downloading: http://example.webscraping.com/places/default/view/Azerbaijan-16
+2
+depth
+link_regex
+['/places/default/view/Azerbaijan-16', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Austria-15
+Downloading: http://example.webscraping.com/places/default/view/Austria-15
+2
+depth
+link_regex
+['/places/default/view/Austria-15', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Australia-14
+Downloading: http://example.webscraping.com/places/default/view/Australia-14
+2
+depth
+link_regex
+['/places/default/view/Australia-14', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Aruba-13
+Downloading: http://example.webscraping.com/places/default/view/Aruba-13
+2
+depth
+link_regex
+['/places/default/view/Aruba-13', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Armenia-12
+Downloading: http://example.webscraping.com/places/default/view/Armenia-12
+2
+depth
+link_regex
+['/places/default/view/Armenia-12', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Argentina-11
+Downloading: http://example.webscraping.com/places/default/view/Argentina-11
+2
+depth
+link_regex
+['/places/default/view/Argentina-11', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Antigua-and-Barbuda-10
+Downloading: http://example.webscraping.com/places/default/view/Antigua-and-Barbuda-10
+1
+depth
+link_regex
+['/places/default/view/Antigua-and-Barbuda-10', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Antarctica-9
+Downloading: http://example.webscraping.com/places/default/view/Antarctica-9
+1
+depth
+link_regex
+['/places/default/view/Antarctica-9', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Anguilla-8
+Downloading: http://example.webscraping.com/places/default/view/Anguilla-8
+1
+depth
+link_regex
+['/places/default/view/Anguilla-8', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Angola-7
+Downloading: http://example.webscraping.com/places/default/view/Angola-7
+1
+depth
+link_regex
+['/places/default/view/Angola-7', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Andorra-6
+Downloading: http://example.webscraping.com/places/default/view/Andorra-6
+1
+depth
+link_regex
+['/places/default/view/Andorra-6', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/American-Samoa-5
+Downloading: http://example.webscraping.com/places/default/view/American-Samoa-5
+1
+depth
+link_regex
+['/places/default/view/American-Samoa-5', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Algeria-4
+Downloading: http://example.webscraping.com/places/default/view/Algeria-4
+1
+depth
+link_regex
+['/places/default/view/Algeria-4', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Albania-3
+Downloading: http://example.webscraping.com/places/default/view/Albania-3
+1
+depth
+link_regex
+['/places/default/view/Albania-3', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Aland-Islands-2
+Downloading: http://example.webscraping.com/places/default/view/Aland-Islands-2
+1
+depth
+link_regex
+['/places/default/view/Aland-Islands-2', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/view/Afghanistan-1
+Downloading: http://example.webscraping.com/places/default/view/Afghanistan-1
+1
+depth
+link_regex
+['/places/default/view/Afghanistan-1', '/places/default/index']
+links
+links
+http://example.webscraping.com/places/default/index
+Downloading: http://example.webscraping.com/places/default/index
+1
+depth
+link_regex
+['/places/default/index', '/places/default/index', '/places/default/view/Afghanistan-1', '/places/default/view/Aland-Islands-2', '/places/default/view/Albania-3', '/places/default/view/Algeria-4', '/places/default/view/American-Samoa-5', '/places/default/view/Andorra-6', '/places/default/view/Angola-7', '/places/default/view/Anguilla-8', '/places/default/view/Antarctica-9', '/places/default/view/Antigua-and-Barbuda-10', '/places/default/index/1']
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
+links
