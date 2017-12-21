@@ -57,6 +57,19 @@ class DiskCache:
         '''
         Create file system path for this url
         '''
+        components = urlparse.urlsplit(url)
+#        when empyt paht set to /index.html
+        path = components.path
+        if not path:
+            path = '/index.html'
+        elif path.endswith('/'):
+            path += 'index.html'
+        filename = components.netloc + path +components.query
+#        replace invalid characters
+        filename = re.sub('[^/0-9a-zA-Z\-.,;_ ]','_',filename)
+#        restrict maximum  number of characters
+        filename = '/'.join(segment[:255] for segment in filename.split('/'))
+        return os.path.join(self.cache_dir, filename)
         
         
     
