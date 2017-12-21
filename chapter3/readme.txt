@@ -1,3 +1,6 @@
+
+downloader.py
+
 这里有两个类，一个Downloader,一个Throttle,
 Downloader 有一个初始化函数，（也就是java的构造器啦），一个回调函数，一个功能函数（download）
 
@@ -18,7 +21,35 @@ result = None  这样就符合此方法内第二个if的条件啦~
 否则proxy乖乖等于None,headers中的user-agent用我们预设的啦，然后我们调用download函数去下载一个结果，传入所以该有的参数，已经默认的参数，比如data，可以不用传，但是当然也可以传，去改变默认，获取到result后，判断一下cache是否存在（我没有测试，但是应该如果cache不存在，你去访问的话，会报错的，），返回的是html。
 
 下面我来解释一个download函数，接受四个参数，url , header(里面key是user-agent) , proxy ,  num_retries,  下面urllib2.Request函数的传参用到了
-or(http://blog.sina.com.cn/s/blog_3fe961ae0100nuzg.html),具体可以看这个链接，也可以进去看Request的源代码，好了，我们已经获取到了一个request对象，下面，我们需要一个opener,如果类本身的opener是None，就创建一个opener, 接下来，判断proxy是否是None,不是的话我们就需要进行一些设置（http://wiki.jikexueyuan.com/project/python-crawler/opener-and-handler.html）可以看看这篇文章，注意这个response对象，他的方法，read() 和属性.code , 如果捕获到异常，先确保html问空字符串，判断如果异常有code属性，获取code,判断如果是服务器的异常，执行下载函数，返回result.
+or
+http://blog.sina.com.cn/s/blog_3fe961ae0100nuzg.html
+,具体可以看这个链接，也可以进去看Request的源代码，好了，我们已经获取到了一个request对象，下面，我们需要一个opener,如果类本身的opener是None，就创建一个opener, 接下来，判断proxy是否是None,不是的话我们就需要进行一些设置
+http://wiki.jikexueyuan.com/project/python-crawler/opener-and-handler.html
+可以看看这篇文章，注意这个response对象，他的方法，read() 和属性.code , 如果捕获到异常，先确保html问空字符串，判断如果异常有code属性，获取code,判断如果是服务器的异常，执行下载函数，返回result.
+
+
+disk_cache.py
+
+先看一下前面的导包部分，shutil 和os 和文件的操作有关，zlib是数据压缩的，timedelta对象代表两个时间之间的时间差，然后一个一样捕捉，这里要解释一下cPickle和pickle
+
+敲黑板！
+
+pickle模块使用的数据格式是python专用的，并且不同版本不向后兼容，同时也不能被其他语言说识别。要和其他语言交互，可以使用内置的json包
+  使用pickle模块你可以把Python对象直接保存到文件，而不需要把他们转化为字符串，也不用底层的文件访问操作把它们写入到一个二进制文件里。pickle模块会创建一个python语言专用的二进制格式，你基本上不用考虑任何文件细节，它会帮你干净利落地完成读写独享操作，唯一需要的只是一个合法的文件句柄。
+    pickle模块中的两个主要函数是dump()和load()。dump()函数接受一个文件句柄和一个数据对象作为参数，把数据对象以特定的格式保存到给定的文件中。当我们使用load()函数从文件中取出已保存的对象时，pickle知道如何恢复这些对象到它们本来的格式。
+    dumps()函数执行和dump()函数相同的序列化。取代接受流对象并将序列化后的数据保存到磁盘文件，这个函数简单的返回序列化的数据。
+    loads()函数执行和load()函数一样的反序列化。取代接受一个流对象并去文件读取序列化后的数据，它接受包含序列化后的数据的str对象, 直接返回的对象。
+    cPickle是pickle得一个更快得C语言编译版本。
+
+解释完了。
+
+
+
+而对于 cache 类， 我们可以通过调用 result = cache [url ］ 从 cache
+中加载数据， 并通过 cache [url ] = result 向 cache 中保存结果。 大家
+应该很熟悉这种便捷的接 口 写法， 因为这也是 ηthon 内 建字典数据类型的使
+用方式 。 为 了支持该接 口 ， 我们 的 cache 类需要定义__getitem__ (  ) 和
+__setitem__( )这两个特殊的类方法.
 
 
 
