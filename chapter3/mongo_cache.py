@@ -8,9 +8,3 @@ from pymongo import MongoClient
 from bson.binary import Binary
 
 
-expires = timedelta(days = 30)
-ex = expires.total_seconds()
-
-print ex
-
-print datetime.utcnow()
